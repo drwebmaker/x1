@@ -1,0 +1,53 @@
+// baseline
+  $global-baseline: 12px;
+
+  $block-spacing-sides: 30;
+  $block-spacing-top: 50;
+
+// typography
+  $global-font-family: "DIN Round Pro", sans-serif;
+  $global-font-family-soft: "DIN Round Pro Medium", sans-serif;
+  $global-font-size: 16px;
+  $global-font-size-small: 14px;
+  $global-line-height: ($global-baseline * 2) - 4;
+
+  $content-area-line-height: $global-baseline * 2.5;
+
+// colors
+  $color-tx:           #323a45;
+
+  $color-dc-primary:   #195491;
+  $color-dc-secondary: #0397d6;
+  $color-dc-tertiary:  #f79d15;
+
+  $color-bg:           #ffffff;
+  $color-bg-primary:   #e8eef4;
+
+// breakpoints
+  $breakpoints: (
+    p0:     $global-baseline * 30,  // 360px
+    p2:     $global-baseline * 40,  // 480px
+    p4:     $global-baseline * 55,  // 660px
+    p6:     $global-baseline * 70,  // 840px
+    p8:     $global-baseline * 80,  // 960px
+    p10:    $global-baseline * 95,   // 1140px
+    p12:    $global-baseline * 110,   // 1320px
+    p14:    $global-baseline * 125   // 1500px
+  );
+
+  $breakpoint-expressions: (
+    p0:  '(min-width: #{map-get($breakpoints, p0)} )',
+    p2:  '(min-width: #{map-get($breakpoints, p2)} )',
+    p4:  '(min-width: #{map-get($breakpoints, p4)} )',
+    p6:  '(min-width: #{map-get($breakpoints, p6)} )',
+    p8:  '(min-width: #{map-get($breakpoints, p8)} )',
+    p10: '(min-width: #{map-get($breakpoints, p10)} )',
+    p12: '(min-width: #{map-get($breakpoints, p12)} )',
+    p14: '(min-width: #{map-get($breakpoints, p14)} )'
+  );
+
+//layout
+  $max-width:  ( ($global-baseline * 6) * 12 ) + ($global-baseline * 8);
+  $min-width: map-get($breakpoints, p2);
+
+  $page-header-height: 45px;
