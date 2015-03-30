@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test site</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="js/responsiveslides.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="l-wrap">
+      <div class="grid grid--narrow">
+        <div class="grid__item one-half p4--one-third">
+          <a href="/" class="logo">
+            <h1 class="logo">Home</h1>
+          </a>
+        </div><!--
+        --><div class="grid__item one-half p4--two-thirds">
+          <ul class="l-list-inline l-list-inline--collapsed ph-menu only-gt-p4">
+            <li class="l-list-inline__item">
+              <a href="" class="ph-menu__item">Jak to działa?</a>
+            </li>
+            <li class="l-list-inline__item">
+              <a href="" class="ph-menu__item">O nas</a>
+            </li>
+            <li class="l-list-inline__item">
+              <a href="" class="button button--primary button-login">Login</a>
+            </li>
+          </ul>
+          <div class="mobile-menu only-lt-p4">
+            <div class="menu-icon"><button onclick="checkClass()"><i class="fa fa-bars"></i></button></div>
+            <div class="mob-menu">
+              <ul class="l-list l-list--collapsed ph-menu">
+                <li class="l-list__item">
+                  <a href="" class="ph-menu__item">Jak to działa?</a>
+                </li>
+                <li class="l-list__item">
+                  <a href="" class="ph-menu__item">O nas</a>
+                </li>
+                <li class="l-list__item">
+                  <a href="" class="button button--primary button-login">Login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main">
+    <section class="slider-section">
+      <ul class="rslides">
+        <li>
+          <div class="slider" style="background-image: url('images/slider1.png')"></div>
+          <div class="slider-text">
+            <div class="l-wrap">
+              <div class="three-fifths slider-pad">
+                I needed 10 000 zł to pay an unforeseen car repair. Thanks to kredito i had the money in 4min on my bank account.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slider" style="background-image: url('images/slider2.png')"></div>
+          <div class="slider-text">
+            <div class="l-wrap">
+              <div class="three-fifths slider-pad">
+                I needed 10 000 zł to pay an unforeseen car repair. Thanks to kredito i had the money in 4min on my bank account.
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="slider" style="background-image: url('images/slider3.png')"></div>
+          <div class="slider-text">
+            <div class="l-wrap">
+              <div class="three-fifths slider-pad">
+                I needed 10 000 zł to pay an unforeseen car repair. Thanks to kredito i had the money in 4min on my bank account.
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="forms-block">
+        <div class="l-wrap">
+          <div class="forms">
+            <div class="forms-title">Możemy Ci przelać nawet <span class="forms-title__alt">10 000 zł</span> w <span class="forms-title__alt">10 minut</span></div>
+            <form class="range-style">
+              <div class="input-decorator">
+                <label>Kwota<br/>pożyczki</label>
+                <input type="range"/>
+              </div>
+              <div class="input-decorator">
+                <label>Długość<br/>pożyczki</label>
+                <input type="range"/>
+              </div>
+              <button class="big-button">Wypłać 1300 zł</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="l-wrap">
+        <h1 class="title-primary">Our Benefits</h1>
+        <div class="grid grid--center grid--narrow benefits-grid">
+          <div class="grid__item p6--one-third">
+            <div class="benefits__item">
+              <div class="benefits-icon">
+                <i class="icon icon-clock"></i>
+              </div>
+              <div class="benefits-title">Natychmiastowa decyzja i przelew</div>
+              <div class="benefits-text">Lorem ipsum dolor sit amet, consetetur sadipscing eirmod tempor invidunt ut elitr, sed diam nonumy eirmod tempor invidunt ut.</div>
+            </div>
+          </div><!--
+        --><div class="grid__item p6--one-third">
+          <div class="benefits__item">
+            <div class="benefits-icon">
+              <i class="icon icon-calendar"></i>
+            </div>
+            <div class="benefits-title">Elastyczna pożyczka na okres od 7 dni do 12 miesięcy</div>
+            <div class="benefits-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.</div>
+          </div>
+        </div><!--
+        --><div class="grid__item p6--one-third">
+          <div class="benefits__item">
+            <div class="benefits-icon">
+              <i class="icon icon-list"></i>
+            </div>
+            <div class="benefits-title">100 % online, bez formalności</div>
+            <div class="benefits-text">Lorem ipsum dolor sit amet, consetetur sadipscing eirmod tempor invidunt ut elitr, sed diam nonumy eirmod tempor invidunt ut.</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="press-video">
+      <div class="l-wrap">
+        <div class="grid">
+          <div class="grid__item p6--one-half">
+            <div class="press">
+              <h2 class="title-secondary">Press</h2>
+              <div class="press-block">
+                <div class="press-block__item">
+                  <div class="l-media l-media--narrow">
+                    <div class="l-media__figure">
+                      <div class="figure">
+                        <img src="images/press1.png" alt=""/>
+                      </div>
+                    </div>
+                    <div class="l-media__body">
+                      <div class="pb-data">24.lip 2013</div>
+                      <div class="pb-title">UJAWNIENIE PŁAC – PROJEKT ZWIĄZKÓW ZAWODOWYCH</div>
+                      <div class="pb-text">Jeden z najpotężniejszych związków zawodowych w Polce jest w... <a class="link" href="">Czytaj dalej →</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="press-block__item">
+                  <div class="l-media l-media--narrow">
+                    <div class="l-media__figure">
+                      <div class="figure">
+                        <img src="images/press2.png" alt=""/>
+                      </div>
+                    </div>
+                    <div class="l-media__body">
+                      <div class="pb-data">9.lip 2013</div>
+                      <div class="pb-title">ZADŁUŻENIA POLAKÓW</div>
+                      <div class="pb-text">Z najnowszego raportu InfoDług (publikowanego cyklicznie przez... <a class="link" href="">Czytaj dalej →</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="press-block__item">
+                  <div class="l-media l-media--narrow">
+                    <div class="l-media__figure">
+                      <div class="figure">
+                        <img src="images/press3.png" alt=""/>
+                      </div>
+                    </div>
+                    <div class="l-media__body">
+                      <div class="pb-data">4.lip 2013</div>
+                      <div class="pb-title">NOWELIZACJA KODEKSU PRACY</div>
+                      <div class="pb-text">Senat przyjął nowelizację kodeksu pracy, która wprowadza roczny okres rozliczeniowy i ruchomy... <a class="link" href="">Czytaj dalej →</a></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div><!--
+        --><div class="grid__item p6--one-half">
+          <h2 class="title-secondary block-large">Nasza reklama TV</h2>
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q5763pPchvw" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    $(function() {
+      $(".rslides").responsiveSlides({
+        auto: true,
+        nav: true
+      });
+    });
+
+    function setEqualHeight(columns)
+    {
+      var tallestcolumn = 0;
+      columns.each(
+        function()
+        {
+          currentHeight = $(this).height();
+          if(currentHeight > tallestcolumn)
+          {
+            tallestcolumn = currentHeight;
+          }
+        }
+      );
+      columns.height(tallestcolumn);
+    }
+    $(document).ready(function() {
+      setEqualHeight($('.benefits .benefits__item'));
+    });
+
+
+
+    function checkClass() {
+      document.querySelector('.mob-menu').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+$button-height: $global-baseline * 2;
+
+.button {
+  display: inline-block;
+  height: $button-height;
+  padding:  0
+            $global-baseline + 5;
+
+  font-family: $global-font-family;
+  font-size: 16px;
+  line-height: $button-height - 3;
+
+  text-align: center;
+
+  border-radius: 2px;
+
+  @include transition-property(background);
+  @include transition-duration(0.2s);
+}
+
+.button--primary {
+  color: #FFFFFF;
+
+  background: $color-dc-secondary;
+
+  &:hover {
+    background: darken($color-dc-secondary, 10%);
+  }
+
+  &:active {
+    background: lighten($color-dc-secondary, 5%);
+  }
+
+  &:disabled {
+    background: mix($color-dc-secondary, #ccc, 40%);
+  }
+}
+
+.button-login {
+  margin-left: $global-baseline;
+  margin-top: $global-baseline - 3;
+}
+
+.big-button {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 216px;
+  height: 50px;
+  background: $color-dc-tertiary;
+  font-family: $global-font-family-soft;
+  font-size: 28px;
+  line-height: 38px;
+  color: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0px 7px 0px #d48201, 2px 9px 1px #6f757c, -2px 9px 1px #6f757c;
+  &:active {
+    top: 10px;
+    box-shadow: 0px 0px 0px #d48201, 2px 2px 1px #6f757c, -2px 2px 1px #6f757c;
+  }
+
+  @include breakpoint( '(max-width: 660px)' ) {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+  }
+}

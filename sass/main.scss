@@ -1,0 +1,38 @@
+@import 'compass';
+
+@import 'config/fonts',
+        'config/variables',
+        'config/resets';
+
+@import 'utilites/breakpoint-m',
+        'utilites/clearfix-p';
+
+@import 'layouts/grid',
+        'layouts/wrap',
+        'layouts/block',
+        'layouts/media',
+        'layouts/list';
+
+@import 'modules/header',
+        'modules/buttons',
+        'modules/benefits',
+        'modules/slider',
+        'modules/inputs',
+        'modules/titles',
+        'modules/icon',
+        'modules/press-video';
+
+@import 'states';
+
+
+.link {
+  color: $color-dc-secondary;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.block-large {
+  margin-bottom: 75px;
+}
